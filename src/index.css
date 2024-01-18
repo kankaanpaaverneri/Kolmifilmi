@@ -56,9 +56,11 @@ header a.button-highlight {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .esittely h1 {
+  width: 50%;
   margin-top: 10%;
   text-align: center;
   margin-left: 20%;
@@ -66,10 +68,50 @@ header a.button-highlight {
 }
 
 .esittely h2 {
-  margin-top: 10%;
+  font-size: 30px;
+  margin-top: 3%;
+  margin-bottom: 3%;
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+.reserve {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+
+
+.reserve button {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  width: 15rem;
+  height: 5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+.reserve button:hover {
+  background: rgba(56, 56, 56, 0.5);
+}
+
+.reserve .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 25px;
 }
 
 .hinnasto {
@@ -81,7 +123,7 @@ header a.button-highlight {
 
 .hinnasto h1 {
   margin-top: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   font-size: 50px;
 }
 
@@ -165,6 +207,150 @@ header a.button-highlight {
   background: rgb(63, 17, 53);
 }
 
+.tuotannot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tuotannot h1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 50px;
+}
+
+.tuotanto-kategoriat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tuotanto-kategoriat button {
+  font-size: 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.tuotanto-kategoriat button.button-highlight {
+  background: white;
+  color: black;
+}
+
+.elokuvat {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+}
+
+.elokuva {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.elokuva a {
+  text-align: center;
+  cursor: pointer;
+}
+
+.elokuva a:hover {
+  border: 15px solid white;
+  transition: 0.2s;
+}
+
+.elokuva img {
+  width: 350px;
+  object-fit: cover;
+}
+
+#pinnat_kireena_juliste {
+  width: 420px;
+}
+
+.mainokset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.mainokset h1 {
+  margin-bottom: 1%;
+}
+
+.video-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-content video {
+  width: 40%;
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  font-size: 25px;
+}
+
+.text-info h1 {
+  margin-bottom: 5%;
+}
+
+.text-info p {
+  margin-bottom: 5%;
+}
+
+.yhteystiedot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.yhteystiedot h1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 50px;
+}
+
+.profile-pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50%;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile p {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.profile-pictures img {
+  width: 15rem;
+  border-radius: 15px;
+  margin-bottom: 15%;
+}
 
 .hidden {
   display: none;
@@ -189,6 +375,29 @@ header a.button-highlight {
     font-size: 15px;
   }
 
+  .reserve h3 {
+    font-size: 15px;
+  }
+
+  .reserve button {
+    font-size: 15px;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 15%;
+  }
+
+  .reserve .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .contact-info p {
+    margin-top: 10%;
+    font-size: 15px;
+  }
+
   .tuotteet button {
     font-size: 15px;
   }
@@ -208,5 +417,42 @@ header a.button-highlight {
 
   .tuote p {
     font-size: 18px;
+  }
+
+  .elokuvat {
+    flex-direction: column;
+  }
+
+  .elokuva img {
+    width: 200px;
+    object-fit: cover;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+
+  #pinnat_kireena_juliste {
+    width: 200px;
+  }
+
+  .video-content {
+    flex-direction: column;
+  }
+
+  .video-content video {
+    width: 70%;
+  }
+
+  .text-info {
+    width: 50%;
+    font-size: 15px;
+
+  }
+
+  .text-info h1 {
+    margin-bottom: 5%;
+  }
+
+  .text-info p {
+    margin-bottom: 5%;
   }
 }
