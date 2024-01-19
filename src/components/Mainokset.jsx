@@ -1,4 +1,6 @@
-import fiksuposti_soittopyynto from "../../public/fiksuposti_soittopyynto.mp4";
+import fiksuposti_soittopyynto from "/fiksuposti_soittopyynto.mp4";
+import "../index.css";
+import "./Mainokset.css";
 
 const Mainokset = ({ ...props }) => {
     return (

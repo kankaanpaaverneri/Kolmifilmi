@@ -1,7 +1,7 @@
 import kolmifilmi_white from "/public/20220215_verkan_kolmifilmi_logo_no_text_white_transparent_72ppi.png";
 import kolmifilmi_black from "/20220215_verkan_kolmifilmi_logo_no_text_black_transparent_72ppi.png";
+import "./Header.css";
 import "../index.css";
-
 
 const Header = ({ navTabSelected, setNavTabSelected }) => {
 

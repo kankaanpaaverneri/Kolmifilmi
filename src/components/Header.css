@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 35px;
+    height: 35px;
+}
+
+header a {
+    margin-left: 2%;
+    margin-right: 2%;
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background: rgb(196, 196, 196);
+    color: black;
+}
+
+header a.button-highlight {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 2000px) {
+    header a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    header a {
+        font-size: 12px;
+    }
+}
+
+.hidden {
+    display: none;
+}

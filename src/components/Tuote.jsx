@@ -1,4 +1,4 @@
-import "../index.css";
+
 
 const Tuote = ({ title, price, info, ...props }) => {
     return (

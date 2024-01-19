@@ -1,3 +1,4 @@
+import "./Esittely.css";
 import "../index.css";
 
 const Esittely = ({ ...props }) => {

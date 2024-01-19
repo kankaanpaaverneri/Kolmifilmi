@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../index.css";
+import "./Tuotannot.css";
 import Elokuvat from "./Elokuvat";
 import Mainokset from "./Mainokset";
 

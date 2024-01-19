@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Hinnasto.css";
 import "../index.css"
 import Tuote from "./Tuote";
 
@@ -53,7 +54,7 @@ const Hinnasto = ({ ...props }) => {
     ]);
 
     function convertPrices(alv) {
-        if(alv === "24") {
+        if (alv === "24") {
             tuotteet.forEach(tuote => {
                 tuote.price = Number(tuote.price) * 1.24;
                 tuote.price = Number(tuote.price).toFixed(2);
@@ -64,7 +65,7 @@ const Hinnasto = ({ ...props }) => {
                 tuote.price = Number(tuote.price).toFixed(2);
             })
         }
-        
+
     }
 
     const [selectedButton, setSelectedButton] = useState("Mainoselokuva");
@@ -105,7 +106,7 @@ const Hinnasto = ({ ...props }) => {
                 <button className={"bold"} onClick={() => handleAlvChange("left")}>{alv === alv0 ? alv24 : alv0}%</button>
                 <p>&nbsp;/&nbsp;</p>
                 <button onClick={() => handleAlvChange("right")}>{alv === alv24 ? alv24 : alv0}%</button>
-                
+
             </div>
             <div className="tuote-hinnasto" >
                 {tuotteet.map((tuote, index) => {

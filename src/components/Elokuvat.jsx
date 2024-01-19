@@ -1,7 +1,8 @@
+import "./Elokuvat.css";
 import "../index.css";
 import Elokuva from "./Elokuva.jsx"
 
-import pinnat_kireena_juliste from "/public/pk_juliste.png";
+import pinnat_kireena_juliste from "/pk_juliste_low_resolution.png";
 import taivaanranta_juliste from "/tr_juliste.png";
 
 const Elokuvat = ({ ...props }) => {

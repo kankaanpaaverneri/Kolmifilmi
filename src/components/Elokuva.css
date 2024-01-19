@@ -1,0 +1,66 @@
+.elokuva {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.elokuva a {
+    text-align: center;
+    cursor: pointer;
+}
+
+.elokuva a:hover {
+    border: 15px solid white;
+    transition: 0.2s;
+}
+
+.elokuva img {
+    width: 350px;
+    object-fit: cover;
+}
+
+#pinnat_kireena_juliste {
+    width: 420px;
+}
+
+@media (max-width: 2000px) {
+
+    .elokuva img {
+        width: 150px;
+        object-fit: cover;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #pinnat_kireena_juliste {
+        width: 180px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .elokuva img {
+        width: 200px;
+        object-fit: cover;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    #pinnat_kireena_juliste {
+        width: 200px;
+    }
+}
+
+@media (max-width: 300px) {
+    .elokuva img {
+        width: 200px;
+        object-fit: cover;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,56 @@
+.tuotannot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tuotannot h1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 50px;
+}
+
+.tuotanto-kategoriat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tuotanto-kategoriat button {
+    font-size: 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.tuotanto-kategoriat button:hover {
+    background: rgb(196, 196, 196);
+    color: black;
+}
+
+.tuotanto-kategoriat button.button-highlight {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 2000px) {
+    .tuotannot h1 {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 30px;
+    }
+
+    .tuotanto-kategoriat button {
+        font-size: 15px;
+    }
+}
+
+.hidden {
+    display: none;
+}

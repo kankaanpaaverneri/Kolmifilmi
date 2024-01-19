@@ -1,3 +1,4 @@
+import "./Elokuva.css";
 import "../index.css";
 
 const Elokuva = ({ film, ...props }) => {
