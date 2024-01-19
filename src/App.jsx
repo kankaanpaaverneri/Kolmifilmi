@@ -11,15 +11,14 @@ function App() {
   const [navTabSelected, setNavTabSelected] = useState("Logo");
 
   const tabs = [
-    <Logo className={`logo ${navTabSelected === "Logo" ? "" : "hidden"}`} />,
-    <Esittely className={`esittely ${navTabSelected === "Esittely" ? "" : "hidden"}`} />,
-    <Hinnasto className={`hinnasto ${navTabSelected === "Hinnasto" ? "" : "hidden"}`} />,
-    <Tuotannot className={`tuotannot ${navTabSelected === "Tuotannot" ? "" : "hidden"}`} />,
-    <Yhteystiedot className={`yhteystiedot ${navTabSelected === "Yhteystiedot" ? "" : "hidden"}`} />
+    <Logo key={1} className={`logo ${navTabSelected === "Logo" ? "" : "hidden"}`} />,
+    <Esittely key={2} className={`esittely ${navTabSelected === "Esittely" ? "" : "hidden"}`} />,
+    <Hinnasto key={3} className={`hinnasto ${navTabSelected === "Hinnasto" ? "" : "hidden"}`} />,
+    <Tuotannot key={4} className={`tuotannot ${navTabSelected === "Tuotannot" ? "" : "hidden"}`} />,
+    <Yhteystiedot key={5} className={`yhteystiedot ${navTabSelected === "Yhteystiedot" ? "" : "hidden"}`} />
   ];
   return (
     <>
-      <div className='backdrop'></div>
       <Header navTabSelected={navTabSelected} setNavTabSelected={setNavTabSelected} />
       {tabs}
     </>

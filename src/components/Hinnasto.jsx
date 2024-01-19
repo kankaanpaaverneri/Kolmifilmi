@@ -4,7 +4,7 @@ import Tuote from "./Tuote";
 
 const Hinnasto = ({ ...props }) => {
 
-    const tuotteet = [
+    const [tuotteet, setTuotteet] = useState([
         {
             title: "Mainoselokuva", price: "5900",
             info: <>
@@ -50,7 +50,23 @@ const Hinnasto = ({ ...props }) => {
                     <p>(* ei sis. lokaatiovuokria)</p>
                 </>
         }
-    ];
+    ]);
+
+    function convertPrices(alv) {
+        if(alv === "24") {
+            tuotteet.forEach(tuote => {
+                tuote.price = Number(tuote.price) * 1.24;
+                tuote.price = Number(tuote.price).toFixed(2);
+            })
+        } else {
+            tuotteet.forEach(tuote => {
+                tuote.price = Number(tuote.price) / 1.24;
+                tuote.price = Number(tuote.price).toFixed(2);
+            })
+        }
+        
+    }
+
     const [selectedButton, setSelectedButton] = useState("Mainoselokuva");
     const [alv, setAlv] = useState("24");
     const [alvButtonSelected, setAlvButtonSelected] = useState(false);
@@ -64,6 +80,7 @@ const Hinnasto = ({ ...props }) => {
     function handleAlvChange(identifier) {
         setAlv(prev => prev === alv0 ? alv24 : alv0);
         setAlvButtonSelected(() => identifier);
+        convertPrices(alv);
     }
 
     return (
@@ -85,9 +102,10 @@ const Hinnasto = ({ ...props }) => {
             </div>
             <div className="alv">
                 <p>ALV.&nbsp;</p>
-                <button className={alvButtonSelected === "left" ? "bold" : ""} onClick={() => handleAlvChange("left")}>{alv === alv24 ? alv24 : alv0}%</button>
+                <button className={"bold"} onClick={() => handleAlvChange("left")}>{alv === alv0 ? alv24 : alv0}%</button>
                 <p>&nbsp;/&nbsp;</p>
-                <button className={alvButtonSelected === "right" ? "bold" : ""} onClick={() => handleAlvChange("right")}>{alv === alv0 ? alv24 : alv0}%</button>
+                <button onClick={() => handleAlvChange("right")}>{alv === alv24 ? alv24 : alv0}%</button>
+                
             </div>
             <div className="tuote-hinnasto" >
                 {tuotteet.map((tuote, index) => {
