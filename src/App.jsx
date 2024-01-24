@@ -8,19 +8,19 @@ import { useState } from "react";
 import Yhteystiedot from './components/Yhteystiedot';
 
 function App() {
-  const [navTabSelected, setNavTabSelected] = useState("Logo");
+  const [navTabSelected, setNavTabSelected] = useState(0);
 
   const tabs = [
-    <Logo key={1} className={`logo ${navTabSelected === "Logo" ? "" : "hidden"}`} />,
-    <Esittely key={2} className={`esittely ${navTabSelected === "Esittely" ? "" : "hidden"}`} />,
-    <Hinnasto key={3} className={`hinnasto ${navTabSelected === "Hinnasto" ? "" : "hidden"}`} />,
-    <Tuotannot key={4} className={`tuotannot ${navTabSelected === "Tuotannot" ? "" : "hidden"}`} />,
-    <Yhteystiedot key={5} className={`yhteystiedot ${navTabSelected === "Yhteystiedot" ? "" : "hidden"}`} />
-  ];
+    <Logo className={"logo"} />,
+    <Esittely className={"esittely"}/>,
+    <Hinnasto className={"hinnasto"}/>,
+    <Tuotannot className={"tuotannot"}/>,
+    <Yhteystiedot className={"yhteystiedot"}/>
+  ]
   return (
     <>
       <Header navTabSelected={navTabSelected} setNavTabSelected={setNavTabSelected} />
-      {tabs}
+      {tabs[navTabSelected]}
     </>
   )
 }

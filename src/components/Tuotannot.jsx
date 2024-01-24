@@ -15,7 +15,7 @@ const Tuotannot = ({ ...props }) => {
 
     return (
         <div {...props}>
-            <h1>Tuotannot</h1>
+            <h1 className="page-title">Tuotannot</h1>
             <div className="tuotanto-kategoriat">
                 <button
                     className={categoryButton === "Elokuvat" ? "button-highlight" : ""}
@@ -26,8 +26,8 @@ const Tuotannot = ({ ...props }) => {
                     onClick={() => handleClick("Mainokset")}
                 >Mainokset</button>
             </div>
-            {categoryButton === "Elokuvat" ? <Elokuvat className={"elokuvat"} /> : undefined}
-            {categoryButton === "Mainokset" ? <Mainokset className={"mainokset"} /> : undefined}
+            {categoryButton === "Elokuvat" && <Elokuvat className={"elokuvat"} />}
+            {categoryButton === "Mainokset" && <Mainokset className={"mainokset"} />}
         </div>
     );
 }

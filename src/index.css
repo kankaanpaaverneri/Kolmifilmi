@@ -12,13 +12,23 @@ body {
   background: black;
 }
 
+.page-title {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 50px;
+}
+
+
+
 
 @media (max-width: 2000px) {}
 
-@media (max-width: 1000px) {}
+@media (max-width: 1000px) {
+  .page-title {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      font-size: 30px;
+  }
+}
 
 @media (max-width: 300px) {}
-
-.hidden {
-  display: none;
-}

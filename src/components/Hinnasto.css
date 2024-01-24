@@ -5,12 +5,6 @@
     align-items: center;
 }
 
-.hinnasto h1 {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 50px;
-}
-
 .tuotteet {
     display: flex;
     justify-content: center;
@@ -95,18 +89,13 @@
 }
 
 @media (max-width: 2000px) {
-    .hinnasto h1 {
-        margin-top: 2%;
-        margin-bottom: 2%;
-        font-size: 30px;
-    }
 
     .tuotteet button {
         font-size: 15px;
     }
 
     .tuote-hinnasto {
-        width: 40%;
+        width: 30%;
     }
 
     .tuote {
@@ -200,8 +189,4 @@
     .tuote p {
         font-size: 12px;
     }
-}
-
-.hidden {
-    display: none;
 }

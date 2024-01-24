@@ -1,14 +1,14 @@
 import "../index.css";
 import "./Yhteystiedot.css";
 
-import sebastian from "/sebastian_low_resolution.jpg";
-import valtti from "/valtti_low_resolution.jpg";
-import verneri from "/verneri_low_resolution.jpg";
+import sebastian from "/sebastian.jpg";
+import valtti from "/valtti.jpg";
+import verneri from "/verneri.jpg";
 
 const Yhteystiedot = ({ ...props }) => {
     return (
         <div {...props}>
-            <h1>Yhteystiedot</h1>
+            <h1 className="page-title">Yhteystiedot</h1>
             <div className="profile-pictures">
                 <div className="profile">
                     <img src={sebastian} />
