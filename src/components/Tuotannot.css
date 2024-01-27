@@ -1,25 +1,21 @@
-.tuotannot {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .tuotanto-kategoriat {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    margin: 1rem;
 }
 
 .tuotanto-kategoriat button {
     font-size: 20px;
+    max-width: 20rem;
+    max-height: 5rem;
+    min-width: 6rem;
+    min-height: 2rem;
     background: black;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
     cursor: pointer;
 }
 
@@ -31,10 +27,4 @@
 .tuotanto-kategoriat button.button-highlight {
     background: white;
     color: black;
-}
-
-@media (max-width: 1500px) {
-    .tuotanto-kategoriat button {
-        font-size: 15px;
-    }
 }

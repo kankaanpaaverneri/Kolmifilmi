@@ -6,7 +6,7 @@ import { HinnastoData } from "../HinnastoData";
 
 const Hinnasto = ({ ...props }) => {
 
-    const [tuotteet, setTuotteet] = useState([...HinnastoData]);
+    const tuotteet = [...HinnastoData];
 
     function convertPrices(alv) {
         if (alv === "24") {
@@ -39,7 +39,7 @@ const Hinnasto = ({ ...props }) => {
     return (
         <div {...props}>
             <h1 className="page-title">Hinnasto</h1>
-            <div className="tuotteet">
+            <div className="tuote-buttons">
                 <button
                     className={selectedButton === "Mainosvideo" ? 'button-highlight' : undefined}
                     onClick={() => handleClick("Mainosvideo")}
@@ -60,16 +60,12 @@ const Hinnasto = ({ ...props }) => {
                 <button onClick={handleAlvChange}>{alv === alv24 ? alv24 : alv0}%</button>
 
             </div>
-
-
-            <div className="tuote-hinnasto" >
-                <Tuote
-                    className={`${selection.title.toLowerCase()}-color tuote`}
-                    title={selection.title}
-                    price={selection.price}
-                    info={selection.info}
-                />
-            </div>
+            <Tuote
+                className={`${selection.title.toLowerCase()}-color tuote`}
+                title={selection.title}
+                price={selection.price}
+                info={selection.info}
+            />
         </div>
     );
 }

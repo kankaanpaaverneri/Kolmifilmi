@@ -1,79 +1,54 @@
-.hinnasto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.tuotteet {
+.tuote-buttons {
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 
-.tuotteet button {
-    font-size: 20px;
+.tuote-buttons button {
+    font-size: 18px;
+    max-width: 20rem;
+    max-height: 5rem;
+    min-width: 6rem;
+    min-height: 2rem;
     background: black;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
     cursor: pointer;
 }
 
-.tuotteet button:hover {
+.tuote-buttons button:hover {
     background: rgb(196, 196, 196);
     color: black;
 }
 
-.tuotteet button.button-highlight {
+.tuote-buttons button.button-highlight {
     background: white;
     color: black;
 }
 
 .alv {
     display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-top: 2%;
-    font-size: 20px;
+    margin: 2rem;
 }
 
 .alv button {
     background: none;
     border: none;
-    cursor: pointer;
     font-size: 20px;
-
+    cursor: pointer;
 }
 
-.alv button.bold {
-    font-weight: bold;
-}
-
-.tuote-hinnasto {
-    display: inline-block;
-    width: 30%;
+.alv p {
+    font-size: 20px;
 }
 
 .tuote {
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    padding: 10%;
-    padding-right: 100%;
-    margin-top: 5%;
-    border-radius: 15px;
-}
-
-.tuote h1 {
-    font-size: 30px;
-}
-
-.tuote p {
+    display: inline-block;
+    min-width: 30rem;
+    padding: 2rem;
     text-align: left;
-    font-size: 20px;
+    border-radius: 15px;
 }
 
 .mainosvideo-color {
@@ -88,107 +63,12 @@
     background: rgb(63, 17, 53);
 }
 
-@media (max-width: 1500px) {
-
-    .tuotteet button {
-        font-size: 15px;
-    }
-
-    .tuote-hinnasto {
-        width: 30%;
-    }
-
-    .tuote {
-        padding: 5%;
-        margin-top: 2%;
-    }
-
-    .tuote h1 {
-        font-size: 20px;
-    }
-
-    .tuote p {
-        font-size: 12px;
-    }
-
-    .alv {
-        margin-top: 2%;
-        margin-bottom: 2%;
-        font-size: 12px;
-    }
-
-    .alv button {
-        font-size: 12px;
-    }
-}
-
 @media (max-width: 1000px) {
-    .tuotteet button {
-        font-size: 15px;
-    }
-
-    .tuote-hinnasto {
-        width: 70%;
-    }
-
-    .alv {
-        margin-top: 10%;
-        margin-bottom: 5%;
-        font-size: 12px;
-    }
-
-    .alv button {
-        font-size: 15px;
-    }
-
     .tuote {
-        padding: 10%;
-        margin-top: 15%;
-    }
-
-    .tuote h1 {
-        font-size: 30px;
-    }
-
-    .tuote p {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 300px) {
-    .tuotteet button {
-        margin-top: 20%;
-        font-size: 12px;
-        padding: 2%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .tuote-hinnasto {
-        width: 70%;
-    }
-
-    .alv {
-        margin-top: 10%;
-        margin-bottom: 5%;
-        font-size: 12px;
-    }
-
-    .alv button {
-        font-size: 13px;
-    }
-
-    .tuote {
-        padding: 10%;
-        margin-top: 30%;
-        margin-bottom: 30%;
-    }
-
-    .tuote h1 {
-        font-size: 30px;
-    }
-
-    .tuote p {
-        font-size: 12px;
+        display: inline-block;
+        min-width: 10rem;
+        padding: 2rem;
+        text-align: left;
+        border-radius: 15px;
     }
 }

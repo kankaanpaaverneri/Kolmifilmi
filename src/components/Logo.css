@@ -1,31 +1,11 @@
 .logo {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 8rem;
 }
 
 .logo img {
-    width: 20%;
-    margin-top: 8%;
-}
+    max-width: 18rem;
+    min-width: 10rem;
 
-@media (max-width: 1500px) {
-    .logo img {
-        width: 20%;
-        margin-top: 8%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .logo img {
-        width: 50%;
-        margin-top: 30%;
-    }
-}
-
-@media (max-width: 300px) {
-    .logo img {
-        width: 60%;
-        margin-top: 60%;
-    }
 }

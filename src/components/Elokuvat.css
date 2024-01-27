@@ -1,28 +1,12 @@
 .elokuvat {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 1rem;
     align-items: center;
-}
-
-@media (max-width: 1500px) {
-    .elokuvat {
-        flex-direction: row;
-    }
 }
 
 @media (max-width: 1000px) {
     .elokuvat {
         flex-direction: column;
     }
-}
-
-@media (max-width: 300px) {
-    .elokuvat {
-        flex-direction: column;
-    }
-}
-
-.hidden {
-    display: none;
 }

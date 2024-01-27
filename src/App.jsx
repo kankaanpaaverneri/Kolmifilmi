@@ -12,10 +12,10 @@ function App() {
 
   const tabs = [
     <Logo className={"logo"} />,
-    <Esittely className={"esittely"}/>,
-    <Hinnasto className={"hinnasto"}/>,
-    <Tuotannot className={"tuotannot"}/>,
-    <Yhteystiedot className={"yhteystiedot"}/>
+    <Esittely className={"page"} />,
+    <Hinnasto className={"page"} />,
+    <Tuotannot className={"page"} />,
+    <Yhteystiedot className={"page"} />
   ]
   return (
     <>
