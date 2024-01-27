@@ -25,7 +25,7 @@
 }
 
 .profile-pictures img {
-    max-width: 50%;
+    max-width: 70%;
     border-radius: 15px;
     margin-bottom: 15%;
 }
@@ -120,7 +120,7 @@
 
     .profile {
         margin-top: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
     }
 
     .profile p {
@@ -131,7 +131,7 @@
 
     .profile-pictures img {
         width: 40%;
-        margin-bottom: 2%;
+        margin-bottom: 5%;
         margin-top: 2%;
     }
 }

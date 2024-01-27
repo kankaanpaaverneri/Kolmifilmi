@@ -1,9 +1,9 @@
 import "../index.css";
 import "./Yhteystiedot.css";
 
-import sebastian from "/sebastian.jpg";
-import valtti from "/valtti.jpg";
-import verneri from "/verneri.jpg";
+import sebastian from "/sebastian_low_resolution.jpg";
+import valtti from "/valtti_low_resolution.jpg";
+import verneri from "/verneri_low_resolution.jpg";
 
 const Yhteystiedot = ({ ...props }) => {
     return (
