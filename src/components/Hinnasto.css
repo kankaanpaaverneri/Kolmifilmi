@@ -88,7 +88,7 @@
     background: rgb(63, 17, 53);
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
 
     .tuotteet button {
         font-size: 15px;
@@ -157,6 +157,7 @@
 
 @media (max-width: 300px) {
     .tuotteet button {
+        margin-top: 20%;
         font-size: 12px;
         padding: 2%;
         margin-left: 5%;
@@ -179,7 +180,7 @@
 
     .tuote {
         padding: 10%;
-        margin-top: 15%;
+        margin-top: 30%;
     }
 
     .tuote h1 {

@@ -9,7 +9,7 @@
     margin-top: 8%;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
     .logo img {
         width: 20%;
         margin-top: 8%;
@@ -25,11 +25,7 @@
 
 @media (max-width: 300px) {
     .logo img {
-        width: 50%;
-        margin-top: 30%;
+        width: 60%;
+        margin-top: 60%;
     }
-}
-
-.hidden {
-    display: none;
 }

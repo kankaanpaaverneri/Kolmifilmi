@@ -17,15 +17,15 @@
 }
 
 .elokuva img {
-    width: 350px;
+    width: 300px;
     object-fit: cover;
 }
 
 #pinnat_kireena_juliste {
-    width: 420px;
+    width: 370px;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
 
     .elokuva img {
         width: 150px;

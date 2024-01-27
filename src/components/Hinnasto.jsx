@@ -54,13 +54,13 @@ const Hinnasto = ({ ...props }) => {
                 >Musiikkivideo</button>
             </div>
             <div className="alv">
-                <p>ALV.&nbsp;</p>
+                <b><p>ALV.&nbsp;</p></b>
                 <button className={"bold"} onClick={handleAlvChange}>{alv === alv0 ? alv24 : alv0}%</button>
                 <p>&nbsp;/&nbsp;</p>
                 <button onClick={handleAlvChange}>{alv === alv24 ? alv24 : alv0}%</button>
 
             </div>
-            
+
 
             <div className="tuote-hinnasto" >
                 <Tuote

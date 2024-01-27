@@ -33,7 +33,7 @@
     color: black;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1500px) {
     .tuotanto-kategoriat button {
         font-size: 15px;
     }

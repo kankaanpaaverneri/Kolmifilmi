@@ -10,8 +10,8 @@ const Esittely = ({ ...props }) => {
             <div className="reserve">
                 <h3>OTA YHTEYTTÄ JA VARAA AIKA TAPAAMISEEN</h3>
                 <div className="contact-info">
-                    <button>+358 504412581</button>
-                    <p>&nbsp;/</p>
+                    <p>+358 504412581</p>
+                    <p>/</p>
                     <p>sebastiankara@kolmifilmi.com</p>
                 </div>
             </div>

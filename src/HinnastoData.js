@@ -17,15 +17,15 @@ export const HinnastoData = [
         title: "Yritysvideo",
         price: "3500",
         info: [
-                "| 3 min",
-                "| 1 Kuvauspäivä*",
-                "| 1 Ammattinäyttelijä",
-                "| Lokaation tyylikäs koristelu",
-                "| Ammatti-kuvauskalusto",
-                "| Jälkityöt ",
-                "| 1 kommenttikierros",
-                "(* Yrityksen toimitiloissa)"
-            ]
+            "| 3 min",
+            "| 1 Kuvauspäivä*",
+            "| 1 Ääninäyttelijä",
+            "| Lokaation tyylikäs koristelu",
+            "| Ammatti-kuvauskalusto",
+            "| Jälkityöt ",
+            "| 1 kommenttikierros",
+            "(* Yrityksen toimitiloissa)"
+        ]
     },
     {
         title: "Musiikkivideo",
